@@ -11,7 +11,7 @@
     "build": "npm-run-all clean parcel:build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sergi Rourera",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.5.1",

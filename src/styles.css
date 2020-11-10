@@ -2,25 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --container-width: 800px;
-}
-
-.container {
-    width: var(--container-width);
-}
-
-.title {
-    display: flex;
-    box-sizing: 'border-box'
-}
-
-::placeholder {
-    color: gray;
-}
-
-body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
-}
