@@ -2,14 +2,60 @@
 <head>
   <link rel="stylesheet" href="./styles/styles.scss" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/3041ae20dc.js"></script>
 </head>
+
 <body>
-  <header class="p-6 top-0 right-0 left-0 fixed duration-700 bg-black text-white">
-    <img class="inline h-10" src="assets/LOGO.png" alt="Logo">
-    <h1 class="inline-block leading-10 text-lg">App Title</h1>
+  
+  <header class="z-50 p-6 top-0 right-0 left-0 fixed duration-700 bg-black text-white">
+    <a href="/">
+      <img class="inline h-10" src="assets/logo-white.png" alt="Logo">
+      <h1 class="inline-block leading-10 text-lg">Entrelibros</h1>
+    </a>
   </header>
 
   <main>
+
+    <div class="container max-w-none">
+      <img class="-z-1 absolute w-full h-full object-cover" src="assets/fondo.jpg" alt="Fondo página inicial">
+      <div class="absolute bottom-0 justify-center w-full text-center">
+        <a href="#content">
+          <button><i class="fa fa-2x fa-chevron-down mb-4 text-white button-scroll" aria-hidden="true"></i></button>
+        </a>
+      </div>
+
+      <div class="container mx-auto home-block w-screen h-screen flex flex-col md:flex-row justify-center">
+
+        <div class="md:flex-1 mb-4 px-6 md:p-10">
+          <h1 class="text-3xl lg:text-5xl font-bold">¡Cada semana, nuevo libro!</h1>
+          <h2 class="text-xl lg:text-3xl text-white ">Esta semana te toca leer...</h2>
+          <a href="/">
+            <button class="hidden button bg-black bg-opacity-75 mt-6 text-white py-3 px-10 rounded-md md:block">¿Qué me he perdido?</button>
+          </a>
+        </div>
+
+        <div class="md:flex-1 flex justify-center">
+          <div class="w-full max-w-screen-h-40 place-self-center p-6 md:p-10 bg-black bg-opacity-25">
+            <a href="/">
+              <div class="portada clickable w-full">
+                <img src="assets/portadas/mujer-al-borde-del-tiempo.jpg" alt="Mujer al borde del tiempo">
+                <img src="assets/book-cover.png" alt="Efecto libro">
+                <div></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="content" class="container mx-auto h-screen">
+      <div class="portada w-20">
+        <img src="assets/portadas/mujer-al-borde-del-tiempo.jpg" alt="Mujer al borde del tiempo">
+        <img src="assets/book-cover.png" alt="Efecto libro">
+        <div></div>
+      </div>
+    </div>
 
   </main>
 

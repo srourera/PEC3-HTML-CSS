@@ -4,9 +4,57 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'PT Sans Narrow', cursive;
 }
 header h1 {
     font-family: 'Syne Mono', cursive;
+}
+
+button{
+    &:focus {
+        outline:0;
+    }
+    &:hover {
+        transform: scale(1.025);
+        filter: brightness(90%);
+    }
+}
+
+
+.home-block {
+    padding: 90px 50px 0;
+    h1 {
+        color: #424242;
+    }
+}
+
+.button-scroll {
+    color: #b9b9b9;
+    text-shadow: 0 0 10px black;
+}
+
+.portada {
+    position: relative;
+    div {
+        box-shadow: 2px 2px 6px black;
+        padding-top: 154%; //To keep aspect ratio
+        &.shadow-white {
+            box-shadow: 2px 2px 6px white;
+        }
+    }
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    &.clickable:hover {
+        transform: scale(1.025);
+        filter: brightness(90%);
+    }
 }
