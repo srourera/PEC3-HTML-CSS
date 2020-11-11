@@ -6,6 +6,7 @@
 
 html {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
@@ -28,13 +29,9 @@ button{
 
 
 .home-block {
+    padding-top: 90px;
     h1 {
         color: #424242;
-    }
-}
-@media (min-width: 768px){
-    .home-block {
-        padding-top: 90px;
     }
 }
 
