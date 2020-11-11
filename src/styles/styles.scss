@@ -27,9 +27,13 @@ button{
 
 
 .home-block {
-    padding: 90px 50px 0;
     h1 {
         color: #424242;
+    }
+}
+@media (min-width: 768px){
+    .home-block {
+        padding-top: 90px;
     }
 }
 
