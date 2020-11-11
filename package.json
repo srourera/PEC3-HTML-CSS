@@ -6,7 +6,7 @@
   "scripts": {
     "parcel:dev": "parcel src/index.html",
     "parcel:build": "parcel build src/index.html --no-source-maps",
-    "clean": "rimraf dist .cache .cache-loader",
+    "clean": "rimraf dist src/**/dist .cache .cache-loader",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build"
   },
@@ -18,8 +18,11 @@
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
     "postcss-custom-properties": "^10.0.0",
+    "postcss-google-font": "^1.0.0",
     "postcss-modules": "^1.4.1",
+    "postcss-scss": "^3.0.4",
     "rimraf": "^3.0.2",
+    "sass": "^1.29.0",
     "tailwindcss": "^1.9.6"
   },
   "dependencies": {}

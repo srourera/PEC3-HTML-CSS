@@ -1,0 +1,12 @@
+@google-font 'Syne+Mono' 400 latin;
+@google-font 'PT+Sans+Narrow' 400,700; 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'PT Sans Narrow', cursive;
+}
+header h1 {
+    font-family: 'Syne Mono', cursive;
+}
