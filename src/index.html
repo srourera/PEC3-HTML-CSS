@@ -16,40 +16,43 @@
 
   <main>
 
-    <div class="container max-w-none">
+    <div class="container max-w-none h-screen">
       <img class="-z-1 absolute w-full h-full object-cover" src="assets/fondo.jpg" alt="Fondo página inicial">
       <div class="absolute bottom-0 justify-center w-full text-center">
         <a href="#content">
-          <button><i class="fa fa-2x fa-chevron-down mb-4 text-white button-scroll" aria-hidden="true"></i></button>
+          <button><i class="fa fa-2x fa-chevron-down mb-4 text-gray-light text-shadow" aria-hidden="true"></i></button>
         </a>
       </div>
 
-      <div class="container mx-auto home-block w-screen h-screen flex flex-col md:flex-row px-4">
+      <div class="container mx-auto pt-90-px pb-50-px px-6 h-full">
+        <div class="flex flex-col md:flex-row h-full">
 
-        <div class="md:flex-1 mb-4 p-6 md:p-10">
-          <h1 class="text-3xl lg:text-5xl font-bold">¡Cada semana, nuevo libro!</h1>
-          <h2 class="text-xl lg:text-3xl text-white ">Esta semana te toca leer...</h2>
-          <a href="/">
-            <button class="hidden button bg-black bg-opacity-75 mt-6 text-white py-3 px-10 rounded-md md:block">¿Qué me he perdido?</button>
-          </a>
-        </div>
-
-        <div class="md:flex-1 flex justify-center">
-          <div class="w-full max-w-screen-h-30 sm:max-w-screen-h-40 place-self-center p-6 md:p-10 bg-black bg-opacity-25">
+          <div>
+            <h1 class="text-3xl lg:text-5xl font-bold text-gray-dark pt-6 px-6 md:pt-10">¡Cada semana, nuevo libro!</h1>
+            <h2 class="text-xl lg:text-3xl text-white pb-6 px-6">Esta semana te toca leer...</h2>
             <a href="/">
-              <div class="portada clickable w-full">
-                <img src="assets/portadas/mujer-al-borde-del-tiempo.jpg" alt="Mujer al borde del tiempo">
-                <img src="assets/book-cover.png" alt="Efecto libro">
-                <div></div>
-              </div>
+              <button class="hidden button bg-black bg-opacity-75 m-6 text-white py-3 px-10 rounded-md md:block">¿Qué me he perdido?</button>
             </a>
           </div>
-        </div>
 
+          <div class="flex-1 flex justify-center">
+            <div class="w-full max-w-sm p-3 md:py-10">
+              <a href="/">
+                <div class="h-full p-6 lg:p-10 bg-black bg-opacity-25">
+                  <div class="relative clickable scale h-full">
+                    <img class="absolute h-full w-full object-contain drop-shadow" src="assets/portadas/mujer-al-borde-del-tiempo.jpg" alt="Mujer al borde del tiempo">
+                    <img class="absolute h-full w-full object-contain" src="assets/book-cover.png" alt="Efecto libro">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <div id="content" class="container mx-auto h-screen">
+    <div id="content" class="container mx-auto h-screen p-6 bg-teal-300">
       <div class="portada w-20">
         <img src="assets/portadas/mujer-al-borde-del-tiempo.jpg" alt="Mujer al borde del tiempo">
         <img src="assets/book-cover.png" alt="Efecto libro">

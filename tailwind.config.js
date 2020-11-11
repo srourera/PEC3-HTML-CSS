@@ -6,6 +6,16 @@ module.exports = {
   purge: ['./src/*.html'],
   theme: {
     extend: {
+      textColor: {
+        'gray-dark': '#424242',
+        'gray-light': '#b9b9b9'
+      },
+      flex: {
+        '25': '0 0 25%',
+        '50': '0 0 50%',
+        '75': '0 0 75%',
+        '100': '0 0 100%',
+      },
       inset: {
         '1/4': '25%',
         '1/2': '50%',
@@ -33,6 +43,15 @@ module.exports = {
         'screen-w-70': '70vw',
         'screen-w-80': '80vw',
         'screen-w-90': '90vw'
+      },
+      spacing: {
+        '10-px': '10px',
+        '15-px': '15px',
+        '20-px': '20px',
+        '25-px': '25px',
+        '50-px': '50px',
+        '75-px': '75px',
+        '90-px': '90px'
       }
     },
   },
