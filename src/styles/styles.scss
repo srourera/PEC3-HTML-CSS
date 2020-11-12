@@ -43,9 +43,13 @@ button{
     display: initial;
 }
 
-.clickable.scale:hover {
-    transform: scale(1.025);
-    filter: brightness(90%);
+.clickable {
+    cursor: pointer;
+
+    &.scale:hover {
+        transform: scale(1.025);
+        filter: brightness(90%);
+    }
 }
 
 .portada {

@@ -11,6 +11,10 @@ module.exports = {
         'gray-light': '#b9b9b9',
         'gray-extra-light': '#dcdcdc'
       },
+      opacity: {
+        '10': '0.1',
+        '20': '0.2'
+      },
       inset: {
         '1/4': '25%',
         '1/2': '50%',
