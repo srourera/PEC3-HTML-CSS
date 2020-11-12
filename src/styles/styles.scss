@@ -39,6 +39,10 @@ button{
     filter: drop-shadow(2px 2px 6px black);
 }
 
+.expanded .expand-item {
+    display: initial;
+}
+
 .clickable.scale:hover {
     transform: scale(1.025);
     filter: brightness(90%);

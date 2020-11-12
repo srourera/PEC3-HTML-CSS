@@ -6,9 +6,10 @@ module.exports = {
   purge: ['./src/*.html'],
   theme: {
     extend: {
-      textColor: {
+      colors: {
         'gray-dark': '#424242',
-        'gray-light': '#b9b9b9'
+        'gray-light': '#b9b9b9',
+        'gray-extra-light': '#dcdcdc'
       },
       inset: {
         '1/4': '25%',
