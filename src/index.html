@@ -9,48 +9,46 @@
 
 <body>
   
-  <header class="z-50 p-6 top-0 right-0 left-0 fixed duration-700 bg-black text-white">
-    <div class="relative container mx-auto px-6">
-      <a href="/">
-        <img class="inline-block h-10" src="assets/logo-white.png" alt="Logo">
-        <h1 class="inline-block leading-10 text-lg">Entrelibros</h1>
+  <header>
+    <div class="page-width">
+      <a class="white" href="/">
+        <img src="assets/logo-white.png" alt="Logo">
+        <h1 class="text-lg special-font white">Entrelibros</h1>
       </a>
-
-      <ul class="float-right hidden sm:block">        
-        <a href="/#libros-mensuales"><li class="leading-10 inline-block mr-4 hover:font-bold">Libros mensuales</li></a>
-        <a href="/#generos"><li class="leading-10 inline-block hover:font-bold">Géneros</li></a>          
-    </ul>
+      <ul>        
+        <a href="/#libros-mensuales"><li class="white">Libros mensuales</li></a>
+        <a href="/#generos"><li class="white">Géneros</li></a>          
+      </ul>    
     </div>
   </header>
 
   <main>
     <section id="top">
-      <div class="relative container max-w-none sm:h-screen sm:max-h-1280px">
-        <img class="-z-1 absolute w-full h-full object-cover" src="assets/fondo.jpg" alt="Fondo página inicial">
-        <div class="absolute bottom-0 w-full text-center">
+      <div class="home-top relative">
+        <img class="home-top-background" src="assets/fondo.jpg" alt="Fondo página inicial">
+        <div class="home-top-scroll">
           <a href="#libros-mensuales">
-            <button><i class="fa fa-2x fa-chevron-down mb-4 text-gray-light text-shadow" aria-hidden="true"></i></button>
+            <button><i class="fa fa-2x fa-chevron-down light-gray text-shadow" aria-hidden="true"></i></button>
           </a>
         </div>
 
-        <div class="container mx-auto pt-115px pb-50px px-6 sm:h-full height-fit-content">
-          <div class="flex flex-col md:flex-row sm:h-full">
-
-            <div class="md:flex-1">
-              <h1 class="text-3xl lg:text-5xl font-bold text-gray-dark pt-3 px-6 md:pt-6">¡Cada mes, nuevo libro!</h1>
-              <h2 class="text-xl lg:text-3xl text-white pb-6 px-6">Este mes te toca leer...</h2>
+        <div class="page-width home-top-content">
+          <div>
+            <div class="left">
+              <h1 class="text-3xl bold dark-gray">¡Cada mes, nuevo libro!</h1>
+              <h2 class="text-xl white">Este mes te toca leer...</h2>
               <a href="/libros-mensuales.html">
-                <button class="hidden button bg-black bg-opacity-75 m-6 text-white py-3 px-10 rounded-md md:block">¿Qué me he perdido?</button>
+                <button class="btn margin hidden white rounded bg-black-75">¿Qué me he perdido?</button>
               </a>
             </div>
 
-            <div class="flex-1 flex justify-center">
-              <div class="relative w-full max-w-sm">
-                <div class="sm:absolute w-full h-64 sm:h-full p-6 lg:p-10 bg-black bg-opacity-25">
+            <div class="right">
+              <div class="relative">
+                <div class="home-top-portada bg-black-25">
                   <a href="/libros/noviembre-2020.html">
-                    <div class="relative clickable scale h-full">
-                      <img class="absolute h-full w-full object-contain drop-shadow" src="assets/portadas/el-funeral-de-lolita.jpg" alt="El funeral de Lolita">
-                      <img class="absolute h-full w-full object-contain" src="assets/book-cover.png" alt="Efecto libro">
+                    <div class="relative clickable scale">
+                      <img class="drop-shadow" src="assets/portadas/el-funeral-de-lolita.jpg" alt="El funeral de Lolita">
+                      <img src="assets/book-cover.png" alt="Efecto libro">
                     </div>
                   </a>
                 </div>
@@ -62,17 +60,17 @@
       </div>
     </section>
 
-    <section id="libros-mensuales" class="bg-gray-extra-light">
-      <div class="container mx-auto px-6 py-12 md:px-10">
-        <h1 class="text-2xl md:text-4xl mb-6">Un nuevo libro cada mes...</h1>
-        <div id="libros-mensuales-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+    <section id="libros-mensuales" class="bg-extra-light-gray">
+      <div class="page-width page-section">
+        <h2 class="title">Un nuevo libro cada mes...</h2>
+        <div id="libros-mensuales-grid" class="grid g-250 g-min-2">
           <a href="/libros/noviembre-2020.html">
             <div class="portada clickable scale">
               <img src="assets/portadas/el-funeral-de-lolita.jpg" alt="El funeral de Lolita">
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Noviembre 2020</p>
+            <p class="portada-title black">Noviembre 2020</p>
           </a>
           <a href="/libros/octubre-2020.html">
             <div class="portada clickable scale">
@@ -80,7 +78,7 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Octubre 2020</p>
+            <p class="portada-title black">Octubre 2020</p>
           </a>
           <a href="/libros/septiembre-2020.html">
             <div class="portada clickable scale">
@@ -88,7 +86,7 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Septiembre 2020</p>
+            <p class="portada-title black">Septiembre 2020</p>
           </a>
           <a href="/">
             <div class="portada clickable scale">
@@ -96,7 +94,7 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Agosto 2020</p>
+            <p class="portada-title black">Agosto 2020</p>
           </a>
           <a href="/libros/julio-2020.html" class="hidden expand-item">
             <div class="portada clickable scale">
@@ -104,7 +102,7 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Julio 2020</p>
+            <p class="portada-title black">Julio 2020</p>
           </a>
           <a href="/libros/junio-2020.html" class="hidden expand-item">
             <div class="portada clickable scale">
@@ -112,7 +110,7 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Junio 2020</p>
+            <p class="portada-title black">Junio 2020</p>
           </a>
           <a href="/libros/mayo-2020.html" class="hidden expand-item">
             <div class="portada clickable scale">
@@ -120,7 +118,7 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Mayo 2020</p>
+            <p class="portada-title black">Mayo 2020</p>
           </a>
           <a href="/" class="hidden expand-item">
             <div class="portada clickable scale">
@@ -128,70 +126,70 @@
               <img src="assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Abril 2020</p>
+            <p class="portada-title black">Abril 2020</p>
           </a>
         </div>
         <a href="/libros-mensuales.html">
-          <button id="libros-mensuales-show-all" class="inline-block float-right bg-black bg-opacity-75 my-6 text-white py-2 px-10 rounded-md">Ver todos</button>
+          <button id="libros-mensuales-show-all" class="btn margin-v float-right white rounded bg-black-75">Ver todos</button>
         </a>
-        <button id="libros-mensuales-show-more" class="inline-block bg-black bg-opacity-75 my-6 text-white py-2 px-10 rounded-md">Ver más</button>
+        <button id="libros-mensuales-show-more" class="btn margin-v white rounded bg-black-75">Ver más</button>
       </div>
     </section>
 
-    <section id="generos" class="bg-gray-light">
-      <div class="container mx-auto px-6 py-12 md:px-10">
-        <h1 class="text-2xl md:text-4xl text-center">¿Prefieres por género?</h1>
-        <h3 class="text-lg md:text-xl mb-6 text-center">Nuestras recomendaciones mensuales filtradas por género</h3>
-        <div id="libros-mensuales" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+    <section id="generos" class="bg-light-gray">
+      <div class="page-width page-section">
+        <h2 class="title centered">¿Prefieres por género?</h2>
+        <h3 class="subtitle centered">Nuestras recomendaciones mensuales filtradas por género</h3>
+        <div id="libros-mensuales" class="grid g-250 g-min-2">
           <a href="/categorias/narrativa.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Narrativa
             </div>            
           </a>
           <a href="/categorias/autoconocimiento.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Autoconocimiento
             </div>            
           </a>
           <a href="/categorias/misterio.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Misterio
             </div>            
           </a>
           <a href="/categorias/poesia.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Poesía
             </div>            
           </a>
           <a href="/categorias/novela-historica.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Novela histórica
             </div>            
           </a>
           <a href="/categorias/novela-negra.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Novela negra
             </div>            
           </a>
           <a href="/categorias/romantico.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Romántico
             </div>            
           </a>
           <a href="/categorias/feminismo.html">
-            <div class="text-center py-6 px-3 bg-black bg-opacity-10 hover:bg-opacity-20 rounded">
+            <div class="category-box rounded bg-black-25 black">
               Feminismo
             </div>            
           </a>        
     </section>
   </main>
 
-  <footer class="p-6 bg-black text-white">
-    <div class="container mx-auto gap-4 place-content-between text-center flex flex-col md:flex-row-reverse">
-      <p class="text-xs md:text-right">
-        Las portadas de los libros se han extraído de <a class="font-bold" href="https://www.casadellibro.com/" target="_blank">Casa del libro</a>, <a class="font-bold" href="https://megustaleer.com/" target="_blank">Me gusta leer</a> y en algunos casos singulares, de <a class="font-bold" href="https://www.amazon.es/" target="_blank">Amazon</a>.
+  <footer>
+    <div class="page-width">
+      <p class="text-xs">
+        Las portadas de los libros se han extraído de <a href="https://www.casadellibro.com/" target="_blank">Casa del libro</a>, <a href="https://megustaleer.com/" target="_blank">Me gusta leer</a> y en algunos casos singulares, de <a href="https://www.amazon.es/" target="_blank">Amazon</a>.
         <br>
-        La imágen de fondo se ha extraído de <a class="font-bold" href="https://unsplash.com/" target="_blank">Unsplash</a>
+        La imágen de fondo se ha extraído de <a href="https://unsplash.com/" target="_blank">Unsplash.</a>
       </p>
       <p>Desarrollado por Sergi Rourera.</p>
     </div>    

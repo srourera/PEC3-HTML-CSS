@@ -1,15 +1,14 @@
 function checkStickyHeader(e){    
     if(window.pageYOffset === 0){
-        header.classList = `${constantClasses} bg-opacity-50`;
+        header.classList.remove('sticky');
         sticky = false;
     }else if(!sticky) {
-        header.classList = `${constantClasses} py-3 bg-opacity-100`;
+        header.classList.add('sticky');
         sticky = true;
     }
 }
 
 const header = document.getElementsByTagName("header")[0];
-const constantClasses = `${header.classList}`;
 
 let sticky = false;
 checkStickyHeader();

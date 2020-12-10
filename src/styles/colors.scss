@@ -1,0 +1,99 @@
+/*COLORS*/
+.white {
+    color: white;
+}
+.black{
+    color: #333;
+}
+.extra-dark-gray{
+    color: $gray-extra-dark-color;
+}
+.dark-gray{
+    color: $gray-dark-color;
+}
+.light-gray{
+    color: $gray-light-color;
+}
+.extra-light-gray{
+    color: $gray-extra-light-color;
+}
+.highlighted{
+    color: $highlighted-color;
+}
+
+/*BACKGROUNDS*/
+.bg-white {
+    background-color: rgba($color: white, $alpha: 1.0);
+    &-10{
+        background-color: rgba($color: white, $alpha: 0.1);
+    }
+    &-25{
+        background-color: rgba($color: white, $alpha: 0.25);
+    }
+    &-50{
+        background-color: rgba($color: white, $alpha: 0.50);
+    }
+    &-75{
+        background-color: rgba($color: white, $alpha: 0.75);
+    }
+}
+.bg-black{
+    background-color: rgba($color: #333, $alpha: 1.0);
+    &-25{
+        background-color: rgba($color: #333, $alpha: 0.25);
+    }
+    &-50{
+        background-color: rgba($color: #333, $alpha: 0.50);
+    }
+    &-75{
+        background-color: rgba($color: #333, $alpha: 0.75);
+    }
+}
+.bg-dark-gray{
+    background-color: rgba($color: $gray-dark-color, $alpha: 1.0);
+    &-25{
+        background-color: rgba($color: $gray-dark-color, $alpha: 0.25);
+    }
+    &-50{
+        background-color: rgba($color: $gray-dark-color, $alpha: 0.50);
+    }
+    &-75{
+        background-color: rgba($color: $gray-dark-color, $alpha: 0.75);
+    }
+}
+.bg-light-gray{
+    background-color: rgba($color: $gray-light-color, $alpha: 1.0);
+    &-25{
+        background-color: rgba($color: $gray-light-color, $alpha: 0.25);
+    }
+    &-50{
+        background-color: rgba($color: $gray-light-color, $alpha: 0.50);
+    }
+    &-75{
+        background-color: rgba($color: $gray-light-color, $alpha: 0.75);
+    }
+}
+.bg-extra-light-gray{
+    background-color: rgba($color: $gray-extra-light-color, $alpha: 1.0);
+    &-25{
+        background-color: rgba($color: $gray-extra-light-color, $alpha: 0.25);
+    }
+    &-50{
+        background-color: rgba($color: $gray-extra-light-color, $alpha: 0.50);
+    }
+    &-75{
+        background-color: rgba($color: $gray-extra-light-color, $alpha: 0.75);
+    }
+}
+.bg-highlighted{
+    background-color: rgba($color: $highlighted-color, $alpha: 1.0);
+    &-25{
+        background-color: rgba($color: $highlighted-color, $alpha: 0.25);
+    }
+    &-50{
+        background-color: rgba($color: $highlighted-color, $alpha: 0.50);
+    }
+    &-75{
+        background-color: rgba($color: $highlighted-color, $alpha: 0.75);
+    }
+}

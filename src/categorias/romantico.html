@@ -9,33 +9,32 @@
 
 <body>
   
-  <div class="h-90px bg-black"></div>
-  <header class="z-50 p-6 top-0 right-0 left-0 fixed duration-700 bg-black text-white">
-    <div class="relative container mx-auto px-6">
-      <a href="/">
-        <img class="inline-block h-10" src="../assets/logo-white.png" alt="Logo">
-        <h1 class="inline-block leading-10 text-lg">Entrelibros</h1>
+  <div class="fake-header"></div>
+  <header>
+    <div class="page-width">
+      <a class="white" href="/">
+        <img src="../assets/logo-white.png" alt="Logo">
+        <h1 class="text-lg special-font white">Entrelibros</h1>
       </a>
-
-      <ul class="float-right hidden sm:block">        
-        <a href="/#libros-mensuales"><li class="leading-10 inline-block mr-4 hover:font-bold">Libros mensuales</li></a>
-        <a href="/#generos"><li class="leading-10 inline-block hover:font-bold">Géneros</li></a>          
-    </ul>
+      <ul>        
+        <a href="/#libros-mensuales"><li class="white">Libros mensuales</li></a>
+        <a href="/#generos"><li class="white">Géneros</li></a>          
+      </ul>    
     </div>
   </header>
   
   <main>
-    <section id="libros-mensuales" class="bg-gray-extra-light">
-      <div class="container mx-auto px-6 py-10 md:px-10">
-        <h1 class="text-2xl md:text-4xl mb-6 text-center">Libros Románticos</h1>
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-10 p-6 md:p-12 bg-gray-light">
+    <section id="libros-mensuales" class="bg-extra-light-gray">
+      <div class="page-width page-section">
+        <h2 class="title centered">Libros Románticos</h2>
+        <div class="grid g-fixed padding-x2 bg-light-gray">
           <a href="/libros/febrero-2020.html">
             <div class="portada clickable scale">
               <img src="../assets/portadas/llamame-por-tu-nombre.jpg" alt="Llámame por tu nombre">
               <img src="../assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Febrero 2020</p>
+            <p class="portada-title black">Febrero 2020</p>
           </a>
           <a href="/">
             <div class="portada clickable scale">
@@ -43,16 +42,16 @@
               <img src="../assets/book-cover.png" alt="Efecto libro">
               <div></div>
             </div>
-            <p class="text-center pt-2">Julio 2019</p>
+            <p class="portada-title black">Julio 2019</p>
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="p-6 bg-black text-white">
-    <div class="container mx-auto gap-4 place-content-between text-center flex flex-col md:flex-row-reverse">
-      <p class="text-xs md:text-right">Las portadas de los libros se han extraído de <a class="font-bold" href="https://www.casadellibro.com/" target="_blank">Casa del libro</a>, <a class="font-bold" href="https://megustaleer.com/" target="_blank">Me gusta leer</a> y en algunos casos singulares, de <a class="font-bold" href="https://www.amazon.es/" target="_blank">Amazon</a>.</p>
+  <footer>
+    <div class="page-width">
+      <p class="text-xs">Las portadas de los libros se han extraído de <a href="https://www.casadellibro.com/" target="_blank">Casa del libro</a>, <a href="https://megustaleer.com/" target="_blank">Me gusta leer</a> y en algunos casos singulares, de <a href="https://www.amazon.es/" target="_blank">Amazon</a>.</p>
       <p>Desarrollado por Sergi Rourera.</p>
     </div>    
   </footer>

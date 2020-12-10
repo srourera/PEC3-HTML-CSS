@@ -1,0 +1,25 @@
+footer {
+    padding: 1.5rem;
+    background-color: black;
+    color: white;  
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: row-reverse;            
+            p:first-child{
+                text-align: right;
+            }
+        }
+
+        a {
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+  

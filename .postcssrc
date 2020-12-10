@@ -3,7 +3,6 @@
   "plugins": {
     "postcss-google-font": true,
     "autoprefixer": true,
-    "postcss-custom-properties": true,
-    "tailwindcss": true
+    "postcss-custom-properties": true
   }
 }
