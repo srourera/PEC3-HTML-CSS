@@ -219,8 +219,49 @@ button{
     display: block;
 }
 
+/*LOADING*/
+#loading {
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.95);
+    animation: totally-disappear 0.2s linear both 1s;
+
+
+    div {
+        width: 145px;        
+        height: 100px;
+        position: fixed;
+        top: calc(50% - 50px);
+        left: calc(50% - 75px);
+
+        img {
+            &.closed {    
+                position: absolute;
+                right: 0;
+                animation: flip 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both 0.5s,
+                           disappear 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both 0.5s;                  
+            }
+            &.opened {
+                opacity: 0;
+                animation: appear 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both 0.5s;                
+            }
+        }
+        hr {
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+            animation: width-increase 0.75s cubic-bezier(0.455, 0.030, 0.515, 0.955) both 0.25s; 
+        }
+    }
+}
+
 
 @import 'fonts.scss';
+@import 'animations.scss';
 @import 'colors.scss';
 @import 'header.scss';
 @import 'main.scss';

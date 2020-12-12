@@ -4,11 +4,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <script src="https://use.fontawesome.com/3041ae20dc.js"></script>
   <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="icon" href="./favicon.svg">
   <title>Entrelibros</title>
 </head>
 
 <body>
-  
+  <div id="loading">
+    <div>
+      <img class="closed" src="assets/logo-closed.svg" alt="Logo loading closed">
+      <img class="opened" src="assets/logo.svg" alt="Logo loading opened">
+      <hr/>
+    </div>
+  </div>
   <header>
     <div class="page-width">
       <a class="white" href="/">
@@ -27,8 +34,9 @@
       <div class="home-top relative">
         
         <img class="home-top-background" src="assets/fondo-home/fondo.jpg" alt="Fondo página inicial"
-             srcset="assets/fondo-home/fondo-160.jpg 160w, assets/fondo-home/fondo-320.jpg 320w, assets/fondo-home/fondo-420.jpg 420w, assets/fondo-home/fondo-580.jpg 580w, assets/fondo-home/fondo-768.jpg 768w, assets/fondo-home/fondo-1024.jpg 1024w, assets/fondo-home/fondo-1280.jpg 1280w, assets/fondo-home/fondo-1920.jpg 1920w"
-             sizes="(max-width: 160px) 160w, (min-width: 160px) 320w, (min-width: 320px) 420w, (min-width: 420px) 580w, (min-width: 580px) 768w, (min-width: 768px) 1024w, (min-width: 1024px) 1280w, (min-width: 1280px) 1920w">
+             srcset="assets/fondo-home/fondo-160.jpg 160w, assets/fondo-home/fondo-320.jpg 320w, assets/fondo-home/fondo-420.jpg 420w,
+             assets/fondo-home/fondo-580.jpg 580w, assets/fondo-home/fondo-768.jpg 768w, assets/fondo-home/fondo-1024.jpg 1024w,
+             assets/fondo-home/fondo-1280.jpg 1280w, assets/fondo-home/fondo-1920.jpg 1920w">
 
         <div class="home-top-scroll">
           <a href="#libros-mensuales">
@@ -51,7 +59,7 @@
                 <div class="home-top-portada bg-black-25">
                   <a href="/libros/noviembre-2020.html">
                     <div class="relative clickable scale">
-                      <img class="drop-shadow" src="assets/portadas/el-funeral-de-lolita.jpg" alt="El funeral de Lolita">
+                      <img class="drop-shadow flip" src="assets/portadas/el-funeral-de-lolita.jpg" alt="El funeral de Lolita">
                       <img src="assets/book-cover.png" alt="Efecto libro">
                     </div>
                   </a>
