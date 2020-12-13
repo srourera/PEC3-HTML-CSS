@@ -19,7 +19,7 @@ function isVisible(el) {
 }
 
 function parallax(){           
-    const scrollSections = document.querySelectorAll('[scroll-section]:not(.active)');
+    const scrollSections = document.querySelectorAll('[data-scroll-section]:not(.active)');
     scrollSections.forEach(scrollSection => {
         if(isVisible(scrollSection)) {
             scrollSection.classList.add('active');
