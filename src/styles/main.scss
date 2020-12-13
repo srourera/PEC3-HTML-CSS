@@ -164,10 +164,15 @@
             }
         }
     }
-    &-shops {
+    &-shops {        
         ul {
             margin: 0 auto;
+            margin-bottom: 50px;
+            @media (min-width:$breakpoint-tablet) {
+                margin-bottom: 25px;
+            }
             max-width: 36rem;
+            z-index: 1;
 
             li {
                 padding: 1.25rem 0;
@@ -193,5 +198,15 @@
         h2.title {
             font-size: 1.5rem;
         }
+    }
+}
+
+.shop-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 16rem;
+    img {
+        width: 100%;
     }
 }
