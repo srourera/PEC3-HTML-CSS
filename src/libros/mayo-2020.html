@@ -51,7 +51,10 @@
             srcset="../assets/portadas/todos-deberiamos-ser-feministas-160.jpg 160w, ../assets/portadas/todos-deberiamos-ser-feministas-320.jpg 320w, ../assets/portadas/todos-deberiamos-ser-feministas-420.jpg 420w,
                     ../assets/portadas/todos-deberiamos-ser-feministas-580.jpg 580w, ../assets/portadas/todos-deberiamos-ser-feministas-768.jpg 768w"
             sizes="(max-width: 460px) 200px, 250px">
-            <img src="../assets/book-cover.png" alt="Efecto libro">
+            <picture>
+              <source media="(min-width: 420px) and (max-width: 767px)" srcset="../assets/book-cover-h.png">
+              <img src="../assets/book-cover.png" alt="Efecto libro">
+            </picture>
             <div></div>
           </div>
         </div>

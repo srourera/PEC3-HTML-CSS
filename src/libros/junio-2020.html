@@ -51,7 +51,10 @@
             srcset="../assets/portadas/siete-mentiras-160.jpg 160w, ../assets/portadas/siete-mentiras-320.jpg 320w, ../assets/portadas/siete-mentiras-420.jpg 420w,
                     ../assets/portadas/siete-mentiras-580.jpg 580w, ../assets/portadas/siete-mentiras-768.jpg 768w"
             sizes="256px">
-            <img src="../assets/book-cover.png" alt="Efecto libro">
+            <picture>
+              <source media="(min-width: 420px) and (max-width: 767px)" srcset="../assets/book-cover-h.png">
+              <img src="../assets/book-cover.png" alt="Efecto libro">
+            </picture>
             <div></div>
           </div>
         </div>

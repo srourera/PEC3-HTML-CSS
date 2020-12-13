@@ -51,7 +51,10 @@
             srcset="../assets/portadas/llamame-por-tu-nombre-160.jpg 160w, ../assets/portadas/llamame-por-tu-nombre-320.jpg 320w, ../assets/portadas/llamame-por-tu-nombre-420.jpg 420w,
                     ../assets/portadas/llamame-por-tu-nombre-580.jpg 580w, ../assets/portadas/llamame-por-tu-nombre-768.jpg 768w"
             sizes="256px">
-            <img src="../assets/book-cover.png" alt="Efecto libro">
+            <picture>
+              <source media="(min-width: 420px) and (max-width: 767px)" srcset="../assets/book-cover-h.png">
+              <img src="../assets/book-cover.png" alt="Efecto libro">
+            </picture>
             <div></div>
           </div>
         </div>
