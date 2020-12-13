@@ -39,7 +39,7 @@
                     flex: 1;
                 }
 
-                h1 {
+                h2 {
                     padding: 1rem 1.5rem 0;
                     @media (min-width:$breakpoint-tablet) {
                         padding-top: 1.5rem;
@@ -48,16 +48,16 @@
                         font-size: 3rem;
                     }
                 }
-                h2 {
+                h3 {
                     padding: 1.5rem;
                     @media (min-width:$breakpoint-desktop) {
                         font-size: 1.875rem;
                     }
                 }
     
-                button {
+                a.btn {
                     @media (min-width:$breakpoint-tablet) {
-                        display: block;
+                        display: inline-block;
                     }
                 }
             }

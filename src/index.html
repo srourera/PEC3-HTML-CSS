@@ -25,8 +25,8 @@
         <h1 class="text-lg special-font white">Entrelibros</h1>
       </a>
       <ul>        
-        <a href="/#libros-mensuales"><li class="white">Libros mensuales</li></a>
-        <a href="/#generos"><li class="white">Géneros</li></a>          
+        <li><a href="/#libros-mensuales" class="white">Libros mensuales</a></li>
+        <li><a href="/#generos" class="white">Géneros</a></li>
       </ul>    
     </div>
   </header>
@@ -41,18 +41,16 @@
              assets/fondo-home/fondo-1280.jpg 1280w, assets/fondo-home/fondo-1920.jpg 1920w">
 
         <div class="home-top-scroll">
-          <a href="#libros-mensuales">
-            <button><i class="fa fa-2x fa-chevron-down light-gray text-shadow" aria-hidden="true"></i></button>
-          </a>
+          <a href="#libros-mensuales"><i class="fa fa-2x fa-chevron-down light-gray text-shadow" aria-hidden="true"></i></a>
         </div>
 
         <div class="page-width home-top-content">
           <div>
             <div class="left">
-              <h1 class="text-3xl bold dark-gray">¡Cada mes, nuevo libro!</h1>
-              <h2 class="text-xl white">Este mes te toca leer...</h2>
-              <a href="/libros-mensuales.html">
-                <button class="btn margin hidden white rounded bg-black-75">¿Qué me he perdido?</button>
+              <h2 class="text-3xl bold dark-gray">¡Cada mes, nuevo libro!</h2>
+              <h3 class="text-xl white">Este mes te toca leer...</h3>
+              <a href="/libros-mensuales.html" class="btn margin hidden white rounded bg-black-75">
+                ¿Qué me he perdido?
               </a>
             </div>
 
@@ -143,10 +141,12 @@
             <p class="portada-title black">Abril 2020</p>
           </a>
         </div>
-        <a href="/libros-mensuales.html">
-          <button id="libros-mensuales-show-all" class="btn margin-v float-right white rounded bg-black-75">Ver todos</button>
-        </a>
-        <button id="libros-mensuales-show-more" class="btn margin-v white rounded bg-black-75">Ver más</button>
+        <div class="margin-v">
+          <a href="/libros-mensuales.html" id="libros-mensuales-show-all" class="text-sm btn float-right white rounded bg-black-75">
+            Ver todos
+          </a>
+          <button id="libros-mensuales-show-more" class="text-sm btn white rounded bg-black-75">Ver más</button>
+        </div>
       </div>
     </section>
 
@@ -204,7 +204,7 @@
     <a href="#top">
       <div class="page-width centered margin-v back-to-top-container">
         <p class="white">Volver arriba</p>
-        <button class="back-to-top"></button>
+        <div class="back-to-top"></div>
         <div class="back-to-top-title">
           <img src="assets/logo.svg" alt="Logo">
           <h1 class="text-lg special-font white">Entrelibros</h1>     
