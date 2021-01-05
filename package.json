@@ -1,7 +1,7 @@
 {
-  "name": "PEC2",
+  "name": "PEC3",
   "version": "1.0.0",
-  "description": "PEC2 Herramientas HTML&CSS",
+  "description": "PEC3 Herramientas HTML&CSS",
   "main": "src/**.html",
   "scripts": {
     "parcel:dev": "parcel src/index.html",
