@@ -19,7 +19,6 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-imagemin": "^4.0.2",
     "postcss-custom-properties": "^10.0.0",
-    "postcss-google-font": "^1.0.0",
     "postcss-modules": "^1.4.1",
     "postcss-scss": "^3.0.4",
     "rimraf": "^3.0.2",

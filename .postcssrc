@@ -1,7 +1,6 @@
 {
   "parser": 'postcss-scss',
   "plugins": {
-    "postcss-google-font": true,
     "autoprefixer": true,
     "postcss-custom-properties": true
   }
